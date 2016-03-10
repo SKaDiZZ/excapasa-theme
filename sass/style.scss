@@ -1,0 +1,235 @@
+@import 'compass/css3';
+@import 'partials/variables';
+@import 'partials/colors';
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: $main-bg-color;
+    font-size: 1.6rem;
+    @include display-flex;
+    @include flex-direction(column);
+}
+main {
+    padding: 30px 0;
+    @include flex(1 0 auto);
+}
+/* Navigation styles */
+#navigacija {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    nav {
+        @include transition(all 500ms ease-in-out);
+        a {
+           font-size: 1.6rem !important;
+       }
+       .brand-logo {
+           font-size: 2.9rem !important;
+       }
+    }
+}
+.side-nav {
+    z-index: 6 !important;
+    li {
+        a {
+            @include text-shadow(none !important);
+        }
+        .active {
+            background-color: $sidenav-active-bg;
+            a {
+                color: white;
+            }
+        }
+        .side-logo {
+            padding: 0;
+        }
+    }
+}
+#sidenav-overlay {
+    z-index: 1 !important;
+}
+.navbar-base nav {
+    background-color: transparent;
+    @include box-shadow(none);
+    a {
+        @include text-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    }
+    .right {
+        a {
+        font-weight: 700;
+        }
+        a:hover {
+        @include text-shadow(none);
+        }
+        .active {
+        background-color: $exclusive-primary-color;
+        @include border-bottom-radius(7px);
+            a {
+            @include text-shadow(none);
+            }
+        }
+    }
+}
+.navbar-scrolled nav {
+    background-color: $exclusive-primary-color;
+    .right .active a {
+        @include text-shadow(none);
+        font-weight: 700 !important;
+    }
+}
+/* Top slider styles */
+.slider .caption {
+    top: 40% !important;
+    @include text-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+.clear {
+  clear: both;
+}
+.apartmani {
+  overflow: visible !important;
+}
+.apartman {
+  width: 33.3%;
+	padding: 0 1.5% 4.5% 1.5%;
+}
+
+/* Card Styles */
+.card {
+    @include box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.15));
+}
+.card-image {
+    overflow: hidden;
+    img {
+        @include transform(scale(1,1));
+        @include transition(all 3s ease-in-out);
+    }
+}
+.card:hover {
+    @include box-shadow(0 1px 35px 0 rgba(0, 0, 0, 0.3));
+    .card-image img {
+        @include transform(scale(2,2));
+    }
+}
+.card-title {
+    font-weight: 700 !important;
+    color: #333333;
+}
+.card-subtitle {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(231, 76, 60, 1);
+}
+.card-content {
+    padding: 30px !important;
+    p {
+        color: #999999;
+    }
+}
+.card-action {
+    padding: 20px 30px !important;
+}
+.card a {
+    color: #999999 !important;
+}
+.card a:hover {
+    color: #222222 !important;
+}
+.status-apartmana {
+    position: absolute;
+    background-color: #4CAF50;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 1;
+    @include border-radius(100%);
+}
+.cijena-apartmana {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(231, 76, 60, 1);
+    z-index: 1;
+}
+.iznajmljeno {
+    .status-apartmana {
+        background-color: #A01607 !important;
+    }
+    .cijena-apartmana {
+        background-color: #999999;
+    }
+    .card-image img {
+        @include filter(grayscale(100%));
+    }
+    .card-subtitle {
+        color: #999999;
+    }
+}
+/* Footer */
+.page-footer {
+    background-color: #999999 !important;
+}
+/* Forme
+ /* label color */
+.input-field label {
+    color: white;
+    font-size: 1.6rem !important;
+}
+.input-field input[type=text] {
+    font-size: 1.6rem;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #444444;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #444444;
+    @include box-shadow(0 1px 0 0 #000);
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    @include box-shadow(0 1px 0 0 #000);
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    @include box-shadow(0 1px 0 0 #000);
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+
+@media (max-width: 1040px) {
+  .apartman {
+    width: 50%;
+		padding: 0 2% 5% 2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .apartman {
+    width: 100%;
+		padding: 0;
+		margin-top: 25px;
+  }
+}

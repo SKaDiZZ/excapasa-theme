@@ -1,0 +1,345 @@
+/* line 4, ../sass/style.scss */
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* line 10, ../sass/style.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 13, ../sass/style.scss */
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #F2F2F2;
+  font-size: 1.6rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 20, ../sass/style.scss */
+main {
+  padding: 30px 0;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+/* Navigation styles */
+/* line 25, ../sass/style.scss */
+#navigacija {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+/* line 30, ../sass/style.scss */
+#navigacija nav {
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+/* line 32, ../sass/style.scss */
+#navigacija nav a {
+  font-size: 1.6rem !important;
+}
+/* line 35, ../sass/style.scss */
+#navigacija nav .brand-logo {
+  font-size: 2.9rem !important;
+}
+
+/* line 40, ../sass/style.scss */
+.side-nav {
+  z-index: 6 !important;
+}
+/* line 43, ../sass/style.scss */
+.side-nav li a {
+  text-shadow: none !important;
+}
+/* line 46, ../sass/style.scss */
+.side-nav li .active {
+  background-color: #999999;
+}
+/* line 48, ../sass/style.scss */
+.side-nav li .active a {
+  color: white;
+}
+/* line 52, ../sass/style.scss */
+.side-nav li .side-logo {
+  padding: 0;
+}
+
+/* line 57, ../sass/style.scss */
+#sidenav-overlay {
+  z-index: 1 !important;
+}
+
+/* line 60, ../sass/style.scss */
+.navbar-base nav {
+  background-color: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 63, ../sass/style.scss */
+.navbar-base nav a {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/* line 67, ../sass/style.scss */
+.navbar-base nav .right a {
+  font-weight: 700;
+}
+/* line 70, ../sass/style.scss */
+.navbar-base nav .right a:hover {
+  text-shadow: none;
+}
+/* line 73, ../sass/style.scss */
+.navbar-base nav .right .active {
+  background-color: #E74C3C;
+  -moz-border-radius-bottomleft: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+/* line 76, ../sass/style.scss */
+.navbar-base nav .right .active a {
+  text-shadow: none;
+}
+
+/* line 82, ../sass/style.scss */
+.navbar-scrolled nav {
+  background-color: #E74C3C;
+}
+/* line 84, ../sass/style.scss */
+.navbar-scrolled nav .right .active a {
+  text-shadow: none;
+  font-weight: 700 !important;
+}
+
+/* Top slider styles */
+/* line 90, ../sass/style.scss */
+.slider .caption {
+  top: 40% !important;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 94, ../sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 97, ../sass/style.scss */
+.apartmani {
+  overflow: visible !important;
+}
+
+/* line 100, ../sass/style.scss */
+.apartman {
+  width: 33.3%;
+  padding: 0 1.5% 4.5% 1.5%;
+}
+
+/* Card Styles */
+/* line 106, ../sass/style.scss */
+.card {
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 109, ../sass/style.scss */
+.card-image {
+  overflow: hidden;
+}
+/* line 111, ../sass/style.scss */
+.card-image img {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+
+/* line 116, ../sass/style.scss */
+.card:hover {
+  -moz-box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+}
+/* line 118, ../sass/style.scss */
+.card:hover .card-image img {
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+
+/* line 122, ../sass/style.scss */
+.card-title {
+  font-weight: 700 !important;
+  color: #333333;
+}
+
+/* line 126, ../sass/style.scss */
+.card-subtitle {
+  display: block;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+/* line 131, ../sass/style.scss */
+.card-content {
+  padding: 30px !important;
+}
+/* line 133, ../sass/style.scss */
+.card-content p {
+  color: #999999;
+}
+
+/* line 137, ../sass/style.scss */
+.card-action {
+  padding: 20px 30px !important;
+}
+
+/* line 140, ../sass/style.scss */
+.card a {
+  color: #999999 !important;
+}
+
+/* line 143, ../sass/style.scss */
+.card a:hover {
+  color: #222222 !important;
+}
+
+/* line 146, ../sass/style.scss */
+.status-apartmana {
+  position: absolute;
+  background-color: #4CAF50;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  z-index: 1;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/* line 160, ../sass/style.scss */
+.cijena-apartmana {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background-color: #e74c3c;
+  z-index: 1;
+}
+
+/* line 172, ../sass/style.scss */
+.iznajmljeno .status-apartmana {
+  background-color: #A01607 !important;
+}
+/* line 175, ../sass/style.scss */
+.iznajmljeno .cijena-apartmana {
+  background-color: #999999;
+}
+/* line 178, ../sass/style.scss */
+.iznajmljeno .card-image img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/* line 181, ../sass/style.scss */
+.iznajmljeno .card-subtitle {
+  color: #999999;
+}
+
+/* Footer */
+/* line 186, ../sass/style.scss */
+.page-footer {
+  background-color: #999999 !important;
+}
+
+/* Forme
+ /* label color */
+/* line 191, ../sass/style.scss */
+.input-field label {
+  color: white;
+  font-size: 1.6rem !important;
+}
+
+/* line 195, ../sass/style.scss */
+.input-field input[type=text] {
+  font-size: 1.6rem;
+}
+
+/* label focus color */
+/* line 199, ../sass/style.scss */
+.input-field input[type=text]:focus + label {
+  color: #444444;
+}
+
+/* label underline focus color */
+/* line 203, ../sass/style.scss */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #444444;
+  -moz-box-shadow: 0 1px 0 0 #000;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+/* line 208, ../sass/style.scss */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  -moz-box-shadow: 0 1px 0 0 #000;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+/* line 213, ../sass/style.scss */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  -moz-box-shadow: 0 1px 0 0 #000;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+/* line 218, ../sass/style.scss */
+.input-field .prefix.active {
+  color: #000;
+}
+
+@media (max-width: 1040px) {
+  /* line 223, ../sass/style.scss */
+  .apartman {
+    width: 50%;
+    padding: 0 2% 5% 2%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 230, ../sass/style.scss */
+  .apartman {
+    width: 100%;
+    padding: 0;
+    margin-top: 25px;
+  }
+}
