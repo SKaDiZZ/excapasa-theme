@@ -29,7 +29,7 @@
       <nav>
         <div class="nav-wrapper">
           <div class="container">
-            <a href="#!" class="brand-logo"><?php echo get_bloginfo( 'name' ); ?></a>
+            <a href="<?php echo site_url(); ?>" class="brand-logo"><?php echo get_bloginfo( 'name' ); ?></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <?php wp_nav_menu( 'header-menu' ); ?>

@@ -28,15 +28,15 @@ $apartmani = new WP_Query( array(
 
                     <?php while ( $apartmani->have_posts() ): $apartmani->the_post(); ?>
 
-                        <?php $slika_apartmana = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-                        
+                        <?php $slika_apartmana = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>
+
                         <div class="apartman">
                              <div class="card">
                                <div class="card-image">
                                  <div class="status-apartmana dostupno">
                                     <i class="material-icons">thumb_up</i>
                                  </div>
-                                 <img src="<?php echo $slika_apartmana; ?>" />
+                                    <a href="<?php echo post_permalink( $post->ID ); ?>"><img src="<?php echo $slika_apartmana; ?>" alt="Slika nije dostupna"/></a>
                                  <div class="cijena-apartmana">
                                    cijena po dogovoru
                                  </div>
@@ -48,7 +48,7 @@ $apartmani = new WP_Query( array(
                                </div>
                                <div class="card-action">
                                  <a href="#">Iznajmite</a>
-                                 <a href="#">Saznajte vise</a>
+                                 <a href="<?php echo post_permalink( $post->ID ); ?>">Saznajte vise</a>
                                </div>
                              </div>
                          </div>
@@ -56,8 +56,7 @@ $apartmani = new WP_Query( array(
 
                     <?php endwhile; ?>
 
-                    <div class="clear"></div>
-                </div><!-- /row -->
+                </div><!-- /.apartmani -->
 
                 <?php wp_reset_postdata(); ?>
 

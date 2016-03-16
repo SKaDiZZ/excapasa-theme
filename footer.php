@@ -12,9 +12,10 @@
 
 <footer class="page-footer">
 <div class="footer-copyright">
-       <div class="container">
-       © 2016 Exclusive Apartments Sarajevo
+      <div class="container">
+        © 2016 Exclusive Apartments Sarajevo
     </div>
+  </div>
 </footer>
 
 <!--========== END FOOTER ==========-->
